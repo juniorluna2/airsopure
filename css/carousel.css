@@ -1,0 +1,166 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* Color Schemes
+Blue: #1e3ecc
+Lime: #a1cf20
+White: #ffffff
+*/
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #ffffff;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #1e3ecc;
+  color: black;
+  height: 150px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-top {
+  width: 1280px;
+  height: 121px;
+  background-color: black;
+}
+.nav_text_pg {
+  margin-top: -5px;
+  color: lightgrey;
+  font-size: 20px;
+  text-align: center;
+}
+.nav_text_hd {
+  font-size: 30px;
+  padding-left: 375px;
+}
+.nav_subtext {
+  color: white;
+  font-size: 20px;
+  padding-left: 290px;
+  font-family: 'open-sans';
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-top: 120px; /* move the top of carousel down */
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+.btn-custom {
+  color: #1e3ecc;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+  /*background: rgba(76, 175, 80, 0.3)*/
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  min-width: 50%;
+  height: 500px;
+  margin: auto;
+}
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+-------------------------------------------------- */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: -50;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-top: -50px;
+}
+.border_divider {
+  background-color: #1e3ecc;
+  height: 80px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

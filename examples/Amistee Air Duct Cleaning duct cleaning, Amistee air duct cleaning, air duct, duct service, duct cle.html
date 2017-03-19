@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
+<head><script type='text/javascript'>window.mod_pagespeed_start = Number(new Date());</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAUHWVJaGwsAVVFUBgE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<title>Amistee Air Duct Cleaning duct cleaning, Amistee air duct cleaning, air duct, duct service, duct cleaners, duct Cleaning in michigan, duct cleaning, michigan, commercial duct cleaning, commercial air duct cleaning, commercial duct cleaner, vent cleaner, blown insulation reviews - Novi, MI</title>
+<link rel="stylesheet" type="text/css" media="screen" href="/app/public/stylesheets/profile/A.template_css.css.pagespeed.cf.Zry56m5y3A.css"/>
+<!--[if IE]>
+		<link rel="stylesheet" type="text/css" media="screen" href="https://www.reviewbuzz.com/app/public/stylesheets/custom-ie.css" />
+		<![endif]-->
+<script type="text/javascript" src="/app/public/js/jquery/jquery.min.js.pagespeed.jm.rv6_84Iu4B.js"></script>
+<script src="/app/public/js/jquery/jquery.rating.js+jquery.example.js+jquery.form.js+jquery.popup.js+jquery.corner.js.pagespeed.jc.jHX0BGMu74.js"></script><script>eval(mod_pagespeed_JvBypLbmHZ);</script>
+<script>eval(mod_pagespeed_I8lpol9h7O);</script>
+<script>eval(mod_pagespeed_h8yuFbX0Ve);</script>
+<script>eval(mod_pagespeed_6u_BLoPQnx);</script>
+<script>eval(mod_pagespeed_cG6D1Zgq$6);</script>
+<script type="text/javascript" src="/app/public/js/jquery/jquery.tools.min.js.pagespeed.jm.rMcLzhk0DU.js"></script>
+<!--<meta name="robots" content="noindex, nofollow" />-->
+<meta name="robots" content="noodp"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="ReviewBuzz: Helping Good People Get Noticed"/>
+<meta property="og:description" content="ReviewBuzz helps service businesses get more 5-star online reviews on sites like Google, Yelp, Facebook and more. "/>
+<meta property="og:url" content="http://www.reviewbuzz.com/"/>
+<meta property="og:image" content=" http://business.reviewbuzz.com/images/ReviewBuzz_Logo1.png"/>
+<meta property="og:site_name" content="ReviewBuzz: Online Reviews For Service Businesses"/>
+<meta name="description" content="2535 reviews of Amistee Air Duct Cleaning Devin and Colin were friendly and professional.  I felt safe and that I could trust them in our home.  Devin explained the procedure and explained what to expect.  I would definitely recommend them and Amistee."/>
+<meta http-equiv="Content-Language" content="en">
+<script>$(document).ready(function(){$('a[name=modal]').click(function(e){e.preventDefault();var id=$(this).attr('href');var maskHeight=$(document).height();var maskWidth=$(window).width();$('#mask').css({'width':maskWidth,'height':maskHeight});$('#mask').fadeIn(1000);$('#mask').fadeTo("slow",0.8);var winH=$(window).height();var winW=$(window).width();$(id).css('top',winH/2-$(id).height()/2);$(id).css('left',winW/2-$(id).width()/2);$(id).fadeIn(2000);});$('.window .close').click(function(e){e.preventDefault();$('#mask').hide();$('.window').hide();});$('#mask').click(function(){$(this).hide();$('.window').hide();});});</script>
+<script type="text/javascript">function showHidePopUp(popUpWindowID){$(popUpWindowID).toggle();}</script>
+<script>$(document).ready(function(){$('#tabsPrivacy div').hide();$('#tabsPrivacy div:first').show();$('#tabsPrivacy ul li a:first').addClass('active');$('#tabsPrivacy ul li a').click(function(){$('#tabsPrivacy ul li a').removeClass('active');$(this).addClass('active');var currentTab=$(this).attr('href');$('#tabsPrivacy div').hide();$(currentTab).show();return false;});});</script>
+<script language="javascript">function openpopup(id){var pageWidth=window.innerWidth;var pageHeight=window.innerHeight;if(typeof pageWidth!="number"){if(document.compatMode=="CSS1Compat"){pageWidth=document.documentElement.clientWidth;pageHeight=document.documentElement.clientHeight;}else{pageWidth=document.body.clientWidth;pageHeight=document.body.clientHeight;}}var divbg=document.getElementById('bg');divbg.style.visibility="visible";var divobj=document.getElementById(id);divobj.style.visibility="visible";if(navigator.appName=="Microsoft Internet Explorer")computedStyle=divobj.currentStyle;else computedStyle=document.defaultView.getComputedStyle(divobj,null);var divWidth=computedStyle.width.replace('px','');var divHeight=computedStyle.height.replace('px','');var divLeft=(pageWidth-divWidth)/2;var divTop=(pageHeight-divHeight)/2;divobj.style.left=divLeft+"px";divobj.style.top=divTop+"px";if(divobj.innerHTML.indexOf("closepopup('"+id+"')")<0)divobj.innerHTML="<a href=\"#\" onclick=\"closepopup('"+id+"')\"><span class=\"close_button\">X</span></a>"+divobj.innerHTML;}function closepopup(id){var divbg=document.getElementById('bg');divbg.style.visibility="hidden";var divobj=document.getElementById(id);divobj.style.visibility="hidden";}</script>
+<script type="text/javascript">setTimeout(function(){var a=document.createElement("script");var b=document.getElementsByTagName("script")[0];a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7295.js?"+Math.floor(new Date().getTime()/3600000);a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)},1);</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-23312498-2','auto');ga('send','pageview');ga('require','displayfeatures');</script>
+<script>(function(){var _fbq=window._fbq||(window._fbq=[]);if(!_fbq.loaded){var fbds=document.createElement('script');fbds.async=true;fbds.src='//connect.facebook.net/en_US/fbds.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(fbds,s);_fbq.loaded=true;}_fbq.push(['addPixelId','721458287924505']);})();window._fbq=window._fbq||[];window._fbq.push(['track','PixelInitialized',{}]);</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=721458287924505&amp;ev=NoScript" data-pagespeed-url-hash="3620088848"/></noscript>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">document.onready=function(){var google_conversion_id=1000584334;var google_custom_params=window.google_tag_params;var google_remarketing_only=true;$.getScript("//www.googleadservices.com/pagead/conversion.js",function(){});};</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1000584334/?value=0&amp;guid=ON&amp;script=0" data-pagespeed-url-hash="916085345"/>
+</div>
+</noscript>
+<script type="text/javascript" src="//events.natero.com/scripts/natero_analytics.min.js"></script>
+<script>function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){if(oldonload){oldonload();}func();}}}if(typeof dojo!='undefined'){addLoadEvent=dojo.addOnLoad;}addLoadEvent(function(){_na=new na('ztcw2ntctrkurgsgjlb3nt7upqayxc3n','85121be21aa91fde1fdebc7605e8654a',{userId:'none',accountId:'none',unloadDelay:100,trackUnload:true});});</script>
+<script type="text/javascript">nateroEventHandler=(function(){var sendEvents=function(moduleName,featureName,callback){if(typeof(_na)!=='undefined'){if((typeof(jQuery)!=='undefined')&&(jQuery.isFunction(callback))){var num=callback(featureName);if(typeof(num)!=='number'){num=0;}}else{var num=1;}for(var i=0;i<num;i++){_na.sendFeatureEvent(featureName,moduleName);}}}
+var attachEvent=function(selector,event,callback){if((typeof(_na)!=='undefined')&&(typeof(jQuery)!=='undefined')){jQuery(selector).on(event,callback);return true;}else{return false;}}
+var nateroEventHandler={onSelectChange:function(selector,module,featureEvents,callback){return attachEvent(selector,'change',function(){var value=this.value;if(typeof(featureEvents[value])!=='undefined'){sendEvents(module,featureEvents[value],callback);}});},onLinkClick:function(selector,module,featureEvent,callback,timeout){return attachEvent(selector,'click',function(e){e.preventDefault();sendEvents(module,featureEvent,callback);var link=this.href;if(typeof(timeout)!=='undefined'){timeout=Number(timeout);if(timeout>0){setTimeout(function(){location.href=link;},timeout);}}else{location.href=link;}});},on:function(selector,event,module,featureEvent,callback){return attachEvent(selector,event,function(e){sendEvents(module,featureEvent,callback);});},}
+return nateroEventHandler;})();</script>
+</head>
+<body>
+<div id="wrapper">
+<style>.featuredTechImgContainer{float:left;width:100px;overflow:hidden;height:107px}.techImgContainer{width:77px;height:77px;overflow:hidden}.techPhoto{width:107px}.memberImage{width:77px}</style>
+<p style="text-align:right; font-style:italic; color:#bbbcbc;">Last Updated: 03/14/2017</p>
+<div id="header">
+<h1 class="title">Amistee Air Duct Cleaning - Online Reviews From Across the Web</h1>
+<a href="/portal/feedback/who_helped_you?company=AmisteeAirDuctCleaning" target="_blank"><script data-pagespeed-no-defer type="text/javascript">(function(){var g=this;function h(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};function l(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};function m(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n;function p(b,d,a,c,e){this.h=b;this.j=d;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=c;this.b={};this.a=[];this.c={}}function q(b,d){var a,c,e=d.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&c<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});function r(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(t())),131072>=a.length+e.length&&(a+=e),d=!0);u=a;if(d){c=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(v){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function t(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var u="";h("pagespeed.CriticalImages.getBeaconData",function(){return u});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/ngx_pagespeed_beacon','https://www.reviewbuzz.com/AmisteeAirDuctCleaning/employee/','EA1UcIxX5_',true,false,'Qm26xBYT_yo');</script><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAAAgCAMAAADDuaGFAAAABGdBTUEAAK/INwWK6QAAAFpQTFRFHYnK////HYnKHYnKHYnKHYnKHYnKHYnKHYnKHYnKHYnKHYnKHYnKHYnKK5DNOZjRSJ/UVqfXZK7bcrXegL3hjsTlnczoq9Prudrvx+Ly1en15PH58vj8////Z+yk2AAAAA10Uk5TAAAGG2xvwMPGz9Lz+Q/IAZEAAAIiSURBVFjD7Zjbjts6DEWlzKXtnNm6WGIsWVr//5t9SOZSNJ0GKYq6B92vpOkFkSJNO79DuZ1COXe4f3zWHvT8eH9wzjvv3d0X7Udf7px33h+etCc9Hbzz/l770r133n/aGdQn77x/3hnUs3fea2/6+6BCzjnHa0OFnHPOlyzx+iA/h8oAYBdMpf3Ie6TvLHYxxO1QvU9YvrNU+mXvDuO3Q0lhsEphMYuSktkSFTvj/J5cbQlv3qoQpVgtKppJKpazZUmLFalaVLYincLdCqWNpjQBiiIAKQNIko4A2zdQU1oBSoBFEZJhWgawqWFamUrn52+CsrZB1WDUzowrLa/DXk8qzrkUCO9qiqMqsxyZWllV2WSYJm0Z1MKmAclov1boTRGSIpQCY10ke62pZB3ym/fMUmOYQc7MMCgyLMNqGy1AAupGuR0q55xeMjMxdYD1FSpssL1BKUPXyQmyBkdmOEMBdDU2Gv18ujfXlKQAixIsuS6lMV+hCiOGd1CqYGo0hZqDKrBKhiVIWnJUAfLko+xdCaUObTLU2KzRVZlNkhao7T2UOsQCa2MEBSCdWsJg2DxdlanGR9m7Fir0U1sM/VQ2cZ5JOsxBffOOk67jSxNdGec+lQZwPF/m8mH2rp99IaeXYfLN5IhXD5bLI+j/MZD/JNTePvL+8877zzuD+uyd9w87g3rY7Yrl7vZE9XRaRp07PDzuZb16OK/t//66XKWvBKbpzqCb0D8AAAAASUVORK5CYII=" class="btn_post_review" alt="Post Reviews" data-pagespeed-url-hash="3739843460" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+</div>
+<div id="tabsHome">
+<ul>
+<li>
+<a href="/AmisteeAirDuctCleaning"><span>About Us</span></a>
+</li>
+<li>
+<a href="/AmisteeAirDuctCleaning/employee/" class="active"><span>See Our <span id="customer_review_portfolio_all_employees_main_page_instance_1_Employees" class="generic_glossary_term generic_glossary_category_customer generic_glossary_platform_review_portfolio generic_glossary_element_all_employees_main_page">Employees</span></span></a>
+</li>
+</ul>
+</div>
+<div id="content">
+<h1 class="blue">Featured 5 Star <span id="customer_review_portfolio_all_employees_main_page_instance_2_Employees" class="generic_glossary_term generic_glossary_category_customer generic_glossary_platform_review_portfolio generic_glossary_element_all_employees_main_page">Employees</span></h1>
+<div class="featuredTech">
+<div class="featuredTechImgContainer">
+<img src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=107&src=/app/public/uploads/89023_thumb_barry1.jpg" class="techPhoto" data-pagespeed-url-hash="3881906190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+<div class="name">
+<a href="/AmisteeAirDuctCleaning/5733-barry">Barry .</a>
+<span>Air Systems Cleaning Specialist</span>
+<p>
+</p>
+</div>
+<div class="rating">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+<br/>
+<span class="starRated">5-Star Rated</span>
+<br/>
+<span class="noofReviews">321 Reviews</span>
+<div class="meetTech">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAYAAADESFVDAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaXFFLasJQFL15ifmJiIOOCh057Q4iAYWIFLqATruhrsBOu4BCR1GEQBbQHbgBUaL5J73nmjfpgUfCu+eee+55xna7fVmv10fLsn6LoiDTNKltW1JKUdM0NBqNSHmeNz0cDj91Xc/5n6qqIqDvezIMg/ieFC4mk8njfr8H8QFEoOs6YnVRVGCjazabzXe7XWzb9hRFoCxL+QpJy47H4+ckSb5ZzYM313VFUcbBKAzisKeAR3/5vm+DAAGFUcoyqWpq6g0ix3NReOVlPpk4eDKVeGIvoghgFOMtjuMPMa/X1Sv/wzufJ9W3nXRKHkp6tGK2Wq02HOhRodA1LdkWJ0sGlXkB1SwMw+h2uyWSlxhnIpQGb9lisYiu12uqn0a2AxvrcyELgiDK8zzFSLylbKeVTqfTeblcRpxTim7AcZx74iBdLhcQNqyWssq9MIySxPnyzCY3vGHKRiUvQL8pbPwJMACcWtHFe9hNKgAAAABJRU5ErkJggg==" data-pagespeed-url-hash="3925078674" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+<a href="/AmisteeAirDuctCleaning/5733-barry">Meet Barry</a>
+</div>
+</div>
+</div>
+<div class="featuredTech">
+<div class="featuredTechImgContainer">
+<img src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=107&src=/app/public/uploads/300262_thumb_melvin1.jpg" class="techPhoto" data-pagespeed-url-hash="1577365316" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+<div class="name">
+<a href="/AmisteeAirDuctCleaning/5875-melvin">Melvin .</a>
+<span>Air Systems Cleaning Specialist</span>
+<p>
+</p>
+</div>
+<div class="rating">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+<br/>
+<span class="starRated">5-Star Rated</span>
+<br/>
+<span class="noofReviews">288 Reviews</span>
+<div class="meetTech">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAYAAADESFVDAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaXFFLasJQFL15ifmJiIOOCh057Q4iAYWIFLqATruhrsBOu4BCR1GEQBbQHbgBUaL5J73nmjfpgUfCu+eee+55xna7fVmv10fLsn6LoiDTNKltW1JKUdM0NBqNSHmeNz0cDj91Xc/5n6qqIqDvezIMg/ieFC4mk8njfr8H8QFEoOs6YnVRVGCjazabzXe7XWzb9hRFoCxL+QpJy47H4+ckSb5ZzYM313VFUcbBKAzisKeAR3/5vm+DAAGFUcoyqWpq6g0ix3NReOVlPpk4eDKVeGIvoghgFOMtjuMPMa/X1Sv/wzufJ9W3nXRKHkp6tGK2Wq02HOhRodA1LdkWJ0sGlXkB1SwMw+h2uyWSlxhnIpQGb9lisYiu12uqn0a2AxvrcyELgiDK8zzFSLylbKeVTqfTeblcRpxTim7AcZx74iBdLhcQNqyWssq9MIySxPnyzCY3vGHKRiUvQL8pbPwJMACcWtHFe9hNKgAAAABJRU5ErkJggg==" data-pagespeed-url-hash="3925078674" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+<a href="/AmisteeAirDuctCleaning/5875-melvin">Meet Melvin</a>
+</div>
+</div>
+</div>
+<br class="clear"/>
+<div class="marginTop10 paddingleft10">
+<span class="disclaimer">* Total number of reviews and star-ratings are based on data collected during the time period Amistee Air Duct Cleaning has been using the ReviewBuzz system and may not directly match the data found on each public review site.</span>
+</div>
+<br class="clear"/>
+<h1>Notable <span id="customer_review_portfolio_all_employees_main_page_instance_1_Team_Members" class="generic_glossary_term generic_glossary_category_customer generic_glossary_platform_review_portfolio generic_glossary_element_all_employees_main_page">Team Members</span></h1>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/106880_thumb_joe1.jpg" alt="Joe Y." class="memberImage" data-pagespeed-url-hash="2393809329" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/14444-joe-yankus"><strong>Joe Y.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/106879_thumb_jake1.jpg" alt="Jake ." class="memberImage" data-pagespeed-url-hash="1817057244" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/5742-jake"><strong>Jake .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/92459_thumb_rob1.jpg" alt="Rob ." class="memberImage" data-pagespeed-url-hash="3410531102" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/9095-rob"><strong>Rob .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/90346_thumb_tyler1.jpg" alt="Tyler ." class="memberImage" data-pagespeed-url-hash="2476009840" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/23087-tyler"><strong>Tyler .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/17357_thumb_josh.jpg" alt="Josh ." class="memberImage" data-pagespeed-url-hash="2378115404" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/5740-josh"><strong>Josh .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/84552_thumb_jim1.jpg" alt="Jim S." class="memberImage" data-pagespeed-url-hash="2855163310" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/6099-jim-stewart"><strong>Jim S.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/107295_thumb_tommy1.jpg" alt="Tommy ." class="memberImage" data-pagespeed-url-hash="1099636694" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/14446-tommy"><strong>Tommy .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/88861_thumb_jacob_k1.jpg" alt="Jacob ." class="memberImage" data-pagespeed-url-hash="266171640" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/41176-jacob"><strong>Jacob .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/65371_thumb_ian_hartley.jpg" alt="Ian ." class="memberImage" data-pagespeed-url-hash="622747807" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/44715-ian"><strong>Ian .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/70015_thumb_jeff_brock.jpg" alt="Jeff ." class="memberImage" data-pagespeed-url-hash="2311157337" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/47909-jeff"><strong>Jeff .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/66673_thumb_greg.jpg" alt="Greg ." class="memberImage" data-pagespeed-url-hash="3850500664" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/45687-greg"><strong>Greg .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/58515_thumb_20150501_160333-1.jpg" alt="Michael ." class="memberImage" data-pagespeed-url-hash="4000765594" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/39950-michael"><strong>Michael .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/95721_thumb_jeff_kantola.jpg" alt="Jeffrey K." class="memberImage" data-pagespeed-url-hash="3528207495" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/65390-jeffrey-k"><strong>Jeffrey K.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/6377_donna.jpg" alt="Donna ." class="memberImage" data-pagespeed-url-hash="3131009157" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/5876-donna"><strong>Donna .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/107742_thumb_devin.jpg" alt="Devin ." class="memberImage" data-pagespeed-url-hash="1190096688" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/74654-devin"><strong>Devin .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/90292_thumb_geroge.jpg" alt="George ." class="memberImage" data-pagespeed-url-hash="3544195866" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/61632-george"><strong>George .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/90991_thumb_dallas.jpg" alt="Dallas ." class="memberImage" data-pagespeed-url-hash="2882730902" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/62009-dallas"><strong>Dallas .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/108468_thumb_antoine1.jpg" alt="Antoine ." class="memberImage" data-pagespeed-url-hash="2523077405" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/14668-antoine"><strong>Antoine .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/288661_thumb_kyle_kimball.jpg" alt="Kyle ." class="memberImage" data-pagespeed-url-hash="3000833404" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/82684-kyle"><strong>Kyle .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/103959_thumb_james_rowe.jpg" alt="James ." class="memberImage" data-pagespeed-url-hash="169573382" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/71961-james"><strong>James .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/115599_thumb_travis.jpg" alt="Travis ." class="memberImage" data-pagespeed-url-hash="554359734" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/80268-travis"><strong>Travis .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/288452_thumb_stephen_m.jpg" alt="Stephen ." class="memberImage" data-pagespeed-url-hash="1672285031" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/82535-stephen"><strong>Stephen .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/84554_thumb_steve1.jpg" alt="Steve D." class="memberImage" data-pagespeed-url-hash="2674996151" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/5881-steve-dickinson"><strong>Steve D.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/19576_thumb_laura.jpg" alt="Laura P." class="memberImage" data-pagespeed-url-hash="2594685924" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/16014-laura-p"><strong>Laura P.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/287281_thumb_shane.jpg" alt="Shane ." class="memberImage" data-pagespeed-url-hash="472762738" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/81616-shane"><strong>Shane .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/112141_thumb_robert_mcintosh.jpg" alt="Robert M." class="memberImage" data-pagespeed-url-hash="508585909" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/77686-robert-m"><strong>Robert M.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/88862_thumb_mike1.jpg" alt="Mike M." class="memberImage" data-pagespeed-url-hash="1598096012" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/5880-mike-mccowan"><strong>Mike M.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/289529_thumb_scott_madden.jpg" alt="Scott ." class="memberImage" data-pagespeed-url-hash="3517386345" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/83286-scott"><strong>Scott .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/300261_thumb_colin_blair.jpg" alt="Colin ." class="memberImage" data-pagespeed-url-hash="4217467093" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/90932-colin"><strong>Colin .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/96887_thumb_julie.jpg" alt="Julie ." class="memberImage" data-pagespeed-url-hash="3427148780" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/66515-julie"><strong>Julie .</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/48410_thumb_20150107_083907.jpg" alt="Jamie T." class="memberImage" data-pagespeed-url-hash="751495690" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/33837-jamie-trost"><strong>Jamie T.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAARCAMAAAAc0/kUAAAAM1BMVEX/+/H95aj+7sX+9uL6vyb83Yv81W/7zFL7yEP7xDX+8tT96rf94Zr82X380GD6uxj///8PUj2OAAAAEXRSTlP/////////////////////ACWtmWIAAAF2SURBVDjLfVRJksQgDDN7gHSk/792Dp2A3XENp5TLWrAVhPc5+T5pOsWQnGLhf0V5oHCwtTvQXh03CI6bRfmIdFQH6mADHDsVh+MGHysSgCxvKJoDRXHcIDpuHkpZ0Bc2wcEGOHYqHDuKUkiOWAEgn1Gh42wAcAQlIzF0ALjmUF7iCQD4RDVGSyntgD6tkIyt61puk+TZTGNviWS16OMiKRaNViTAtslzf3UqSYrl+2ZiZFPL4xmpoRRbOmRP2Wr8qty5Myp57MVpSjGlQ/QurYZVWdlWKnnoeChK0aUuNjEAgEstfqmo92GrDBvCTSlPVvETw9Wmk309RZ3sJaJqw1AKyQmn7eMpH46ywFG2lEKywLnwCmxWIu89kfG9J02ZbpEL6EE+AKYZQoupARAzhJpih36qTiAXObO53qaMt8iRC0mmqtoEfZJkbGoKE+37I3TouVYhKSWrwVpKIVker2mHZoT9vmyRpXfuJ2R9irrJppwk/wB1fl0VJiIxIQAAAABJRU5ErkJggg==" alt="5-Star Rated" data-pagespeed-url-hash="209402541" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</td>
+</tr>
+</table>
+<hr/>
+<table width="100%" border="0" cellspacing="4" cellpadding="4" align="center">
+<tr>
+<td width="8%">
+<div class="techImgContainer">
+<img border="0" src="https://www.reviewbuzz.com//core/app/public/php/phpthumb/phpThumb.php?w=77&src=/app/public/uploads/84553_thumb_david_r.jpg" alt="David R." class="memberImage" data-pagespeed-url-hash="653233419" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+</div>
+</td>
+<td width="72%">
+<p>
+<a href="/AmisteeAirDuctCleaning/21435-david-rott"><strong>David R.</strong></a>
+<br/>
+</p>
+</td>
+<td width="3%">&nbsp;</td>
+<td width="17%">
+</td>
+</tr>
+</table>
+<hr/>
+</div>
+</div>
+<!-- begin SnapEngage code -->
+<script type="text/javascript">(function(){var se=document.createElement('script');se.type='text/javascript';se.async=true;se.src='//commondatastorage.googleapis.com/code.snapengage.com/js/708d30f5-3988-4400-acf9-6fbe7a512af1.js';var done=false;se.onload=se.onreadystatechange=function(){if(!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')){done=true;}};var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(se,s);})();</script>
+<!-- end SnapEngage code -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"59ec1545ea","applicationID":"8010610","transactionName":"ZwQEZ0dUXhBUVEBQV15OM0FcGlkNUVJMF0hYEQ==","queueTime":0,"applicationTime":591,"atts":"S0MHEQ9OTR4=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-pagespeed-no-defer type="text/javascript">(function(){window.pagespeed=window.pagespeed||{};var f=window.pagespeed;function h(e,a,c,b){this.f=e;this.a=a;this.b=c;this.g=b}f.beaconUrl="";
+function k(e){var a=e.f,c=window.mod_pagespeed_start,b=Number(new Date)-c,a=a+(-1==a.indexOf("?")?"?":"&"),a=a+"ets="+("load"==e.a?"load:":"unload:"),a=a+b;if("beforeunload"!=e.a||!window.mod_pagespeed_loaded){a+="&r"+e.a+"=";if(window.performance){var b=window.performance.timing,d=b.navigationStart,g=b.requestStart,a=a+(b[e.a+"EventStart"]-d),a=a+("&nav="+(b.fetchStart-d)),a=a+("&dns="+(b.domainLookupEnd-b.domainLookupStart)),a=a+("&connect="+(b.connectEnd-b.connectStart)),a=a+("&req_start="+(g-
+d)),a=a+("&ttfb="+(b.responseStart-g)),a=a+("&dwld="+(b.responseEnd-b.responseStart)),a=a+("&dom_c="+(b.domContentLoadedEventStart-d));window.performance.navigation&&(a+="&nt="+window.performance.navigation.type);d=-1;b.msFirstPaint?d=b.msFirstPaint:window.chrome&&window.chrome.loadTimes&&(d=Math.floor(1E3*window.chrome.loadTimes().firstPaintTime));d=d-g;0<=d&&(a+="&fp="+d)}else a+=b;f.getResourceTimingData&&window.parent==window&&(a+=f.getResourceTimingData());a+=window.parent!=window?"&ifr=1":"&ifr=0";
+"load"==e.a&&(window.mod_pagespeed_loaded=!0,(b=window.mod_pagespeed_num_resources_prefetched)&&(a+="&nrp="+b),(b=window.mod_pagespeed_prefetch_start)&&(a+="&htmlAt="+(c-b)));f.panelLoader&&(c=f.panelLoader.getCsiTimingsString(),""!=c&&(a+="&b_csi="+c));f.criticalCss&&(c=f.criticalCss,a+="&ccis="+c.total_critical_inlined_size+"&cces="+c.total_original_external_size+"&ccos="+c.total_overhead_size+"&ccrl="+c.num_replaced_links+"&ccul="+c.num_unreplaced_links);a+="&dpr="+window.devicePixelRatio;""!=
+e.b&&(a+=e.b);document.referrer&&(a+="&ref="+encodeURIComponent(document.referrer));a+="&url="+encodeURIComponent(e.g);f.beaconUrl=a;(new Image).src=a}}f.c=function(e,a,c,b){var d=new h(e,a,c,b);window.addEventListener?window.addEventListener(a,function(){k(d)},!1):window.attachEvent("on"+a,function(){k(d)})};f.addInstrumentationInit=f.c;})();
+
+pagespeed.addInstrumentationInit('/ngx_pagespeed_beacon', 'load', '', 'https://www.reviewbuzz.com/AmisteeAirDuctCleaning/employee/');</script></body>
+</html>

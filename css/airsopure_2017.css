@@ -1,0 +1,139 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* Color Schemes
+Blue: #1e3ecc
+Lime: #a1cf20
+White: #ffffff
+*/
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* Horizontal Scroller
+-------------------------------------------------- */
+.strip_area {
+  background: #0055A5 url(../images_new/strip.png);
+  height:22px;
+}
+.brand_wrapper {
+  white-space: nowrap;
+}
+.padding_put {padding: 0 35px;}
+
+.strip {
+  background: lightgrey;
+}
+.padding_put {padding: 0 35px;}
+
+.horizontal_img {
+  width: 75px;
+  height: 75px;
+}
+
+/* Services
+-------------------------------------------------- */
+/* Air Duct Cleaning */
+.services {
+    margin-top: 100px;
+}
+.banner {
+    margin-top: -60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-width: 7px;
+    background-color: #1e3ecc;
+}
+.banner_text {
+  font-family:Impact;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: grey;
+  /*text-shadow: 2px 5px 2px #000;*/
+  padding: 21px 0px;
+  display: block;
+}
+.banner_phone_number {
+  font-family:Impact;
+  color: grey !important;
+  font-size: 42px;
+  text-transform: uppercase;
+  padding: 21px 32px;
+  display: block;
+  text-decoration:none !important;  
+}
+.banner_text > img {
+  position: absolute;
+  left: 12px;
+  top: 32px;
+}
+
+/* Contact Form
+-------------------------------------------------- */
+.form_top {
+  margin-top: 200px;
+}
+.form_top_img {
+  margin-top: -70px;
+}
+.before {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.after {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cf_img {
+  width: 200px;
+  height: 200px;
+}
+.cf_img-divider {
+  margin: 10px 0; /* Space out the Bootstrap <hr> more */
+}
+.free_est_text {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+.submit_custom {
+  width: 20%;
+  color: lightgrey;
+  background-color: #1e3ecc;
+  margin-left: 275px;
+  margin-top: 10px;
+}
+
+/* FAQs
+-------------------------------------------------- */
+.faq_top {
+  margin-top: 50px;
+}
+.faq_custom_top {
+  background-color: #1e3ecc;
+  color: lightgrey;
+}
+.faq_custom_bottom {
+  border: solid;
+}
+
+/* Store
+-------------------------------------------------- */
+.store_pad {
+  margin-top: 100px;
+}
+

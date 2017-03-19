@@ -1,0 +1,6 @@
+Notes
+
+- Each grid row makes us to 12 columns so each <div> should equal 12
+- google maps location
+- paypal functionality
+- google calendar
