@@ -11,9 +11,8 @@ White: #ffffff
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: #ffffff;
+  background-color: lightblue;
 }
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -33,9 +32,8 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-  background-color: #1e3ecc;
-  color: black;
-  height: 150px;
+  background-color: #328dc9;
+  height: 165px;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
@@ -45,23 +43,35 @@ body {
   height: 121px;
   background-color: black;
 }
-.nav_text_pg {
-  margin-top: -5px;
-  color: lightgrey;
-  font-size: 20px;
-  text-align: center;
+.nav-text-pg {
+  margin-top: 15px;
+  margin-left: 100px;
+  font-size: 25px;
 }
-.nav_text_hd {
-  font-size: 30px;
-  padding-left: 375px;
-}
-.nav_subtext {
-  color: white;
-  font-size: 20px;
-  padding-left: 290px;
+.nav-subtext {
+  color: black;
+  font-size: 17px;
+  /*padding-top: -100px;*/
+  /*padding-left: 370px;
+  margin-right: -50px;*/
+  margin-top: -80px;
+  text-align: right;
   font-family: 'open-sans';
 }
-
+.nav-subtext a {
+  color: black;
+}
+.nav-img-hd {
+  width: 300px;
+  height: 150px;
+  margin-top: -20px;
+}
+.navbar-toggle-header {
+  margin-top: 50px;
+}
+.nav.navbar-nav.nav-text-pg li a {
+    color: black;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -84,18 +94,17 @@ body {
   /*background: rgba(76, 175, 80, 0.3)*/
 }
 .carousel-inner > .item > img {
-  position: absolute;
+  /*position: absolute;
   top: 0px;
   left: 300px;
-  min-width: 50%;
+  min-width: 50%;*/
   height: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
 div.c-wrapper{
     width: 80%; /* for example */
     margin: auto;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -130,6 +139,7 @@ div.c-wrapper{
   background-color: #1e3ecc;
   height: 80px;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 768px) {

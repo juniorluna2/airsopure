@@ -1,0 +1,477 @@
+48331,MI,Oakland,Farmington,5,0
+48322,MI,Oakland,West Bloomfield,5,5
+48335,MI,Oakland,Farmington,5,5
+48334,MI,Oakland,Farmington,5,5
+48332,MI,Oakland,Farmington,5,5
+48333,MI,Oakland,Farmington,5,5
+48377,MI,Oakland,Novi,5,6
+48376,MI,Oakland,Novi,5,6
+48375,MI,Oakland,Novi,5,7
+48336,MI,Oakland,Farmington,5,7
+48323,MI,Oakland,West Bloomfield,5,8
+48390,MI,Oakland,Walled Lake,5,8
+48152,MI,Wayne,Livonia,5,9
+48034,MI,Oakland,Southfield,5,10
+48324,MI,Oakland,West Bloomfield,5,10
+48374,MI,Oakland,Novi,5,10
+48033,MI,Oakland,Southfield,5,11
+48301,MI,Oakland,Bloomfield Hills,5,11
+48025,MI,Oakland,Franklin,5,12
+48382,MI,Oakland,Commerce Township,5,12
+48393,MI,Oakland,Wixom,5,12
+48167,MI,Wayne,Northville,5,12
+48154,MI,Wayne,Livonia,5,12
+48240,MI,Wayne,Redford,5,12
+48387,MI,Oakland,Union Lake,5,13
+48302,MI,Oakland,Bloomfield Hills,5,13
+48320,MI,Oakland,Keego Harbor,5,13
+48076,MI,Oakland,Southfield,5,14
+48325,MI,Oakland,West Bloomfield,5,15
+48075,MI,Oakland,Southfield,5,15
+48150,MI,Wayne,Livonia,5,15
+48219,MI,Wayne,Detroit,5,15
+48168,MI,Wayne,Northville,5,16
+48327,MI,Oakland,Waterford,5,16
+48037,MI,Oakland,Southfield,5,16
+48086,MI,Oakland,Southfield,5,16
+48303,MI,Oakland,Bloomfield Hills,5,16
+48151,MI,Wayne,Livonia,5,16
+48153,MI,Wayne,Livonia,5,16
+48328,MI,Oakland,Waterford,5,16
+48009,MI,Oakland,Birmingham,5,16
+48012,MI,Oakland,Birmingham,5,17
+48304,MI,Oakland,Bloomfield Hills,5,17
+48341,MI,Oakland,Pontiac,5,17
+48381,MI,Oakland,Milford,5,17
+48321,MI,Oakland,Auburn Hills,5,18
+48343,MI,Oakland,Pontiac,5,18
+48165,MI,Oakland,New Hudson,5,18
+48239,MI,Wayne,Redford,5,18
+48175,MI,Washtenaw,Salem,5,18
+48386,MI,Oakland,White Lake,5,18
+48223,MI,Wayne,Detroit,5,18
+48072,MI,Oakland,Berkley,5,19
+48342,MI,Oakland,Pontiac,5,19
+48170,MI,Wayne,Plymouth,5,19
+48237,MI,Oakland,Oak Park,5,19
+48383,MI,Oakland,White Lake,5,19
+48235,MI,Wayne,Detroit,5,19
+48185,MI,Wayne,Westland,5,20
+48084,MI,Oakland,Troy,5,20
+48073,MI,Oakland,Royal Oak,5,20
+48070,MI,Oakland,Huntington Woods,5,20
+48330,MI,Oakland,Drayton Plains,5,20
+48329,MI,Oakland,Waterford,5,20
+48340,MI,Oakland,Pontiac,5,21
+48135,MI,Wayne,Garden City,5,21
+48187,MI,Wayne,Canton,5,21
+48326,MI,Oakland,Auburn Hills,5,21
+48136,MI,Wayne,Garden City,5,21
+48098,MI,Oakland,Troy,5,21
+48068,MI,Oakland,Royal Oak,5,22
+48178,MI,Oakland,South Lyon,5,22
+48017,MI,Oakland,Clawson,5,22
+48067,MI,Oakland,Royal Oak,5,22
+48069,MI,Oakland,Pleasant Ridge,5,22
+48227,MI,Wayne,Detroit,5,22
+48127,MI,Wayne,Dearborn Heights,5,22
+48356,MI,Oakland,Highland,5,22
+48220,MI,Oakland,Ferndale,5,22
+48380,MI,Oakland,Milford,5,23
+48221,MI,Wayne,Detroit,5,23
+48228,MI,Wayne,Detroit,5,23
+48099,MI,Oakland,Troy,5,24
+48007,MI,Oakland,Troy,5,24
+48128,MI,Wayne,Dearborn,5,24
+48186,MI,Wayne,Westland,5,24
+48346,MI,Oakland,Clarkston,5,24
+48083,MI,Oakland,Troy,5,24
+48141,MI,Wayne,Inkster,5,25
+48071,MI,Oakland,Madison Heights,5,25
+48309,MI,Oakland,Rochester,5,25
+48357,MI,Oakland,Highland,5,25
+48188,MI,Wayne,Canton,5,25
+48238,MI,Wayne,Detroit,5,25
+48347,MI,Oakland,Clarkston,5,26
+48030,MI,Oakland,Hazel Park,5,26
+48085,MI,Oakland,Troy,5,26
+48124,MI,Wayne,Dearborn,5,26
+48126,MI,Wayne,Dearborn,5,27
+48203,MI,Wayne,Highland Park,5,27
+48125,MI,Wayne,Dearborn Heights,5,27
+48204,MI,Wayne,Detroit,5,27
+48359,MI,Oakland,Lake Orion,5,27
+48184,MI,Wayne,Wayne,5,27
+48121,MI,Wayne,Dearborn,5,28
+48123,MI,Wayne,Dearborn,5,28
+48348,MI,Oakland,Clarkston,5,28
+48310,MI,Macomb,Sterling Heights,5,29
+48206,MI,Wayne,Detroit,5,29
+48092,MI,Macomb,Warren,5,29
+48360,MI,Oakland,Lake Orion,5,29
+48307,MI,Oakland,Rochester,5,29
+48120,MI,Wayne,Dearborn,5,29
+48350,MI,Oakland,Davisburg,5,29
+48091,MI,Macomb,Warren,5,29
+48114,MI,Livingston,Brighton,5,29
+48116,MI,Livingston,Brighton,5,30
+48308,MI,Oakland,Rochester,5,30
+48210,MI,Wayne,Detroit,5,30
+48353,MI,Livingston,Hartland,5,30
+48198,MI,Washtenaw,Ypsilanti,5,31
+48202,MI,Wayne,Detroit,5,31
+48015,MI,Macomb,Center Line,5,31
+48212,MI,Wayne,Hamtramck,5,31
+48090,MI,Macomb,Warren,5,31
+48122,MI,Wayne,Melvindale,5,31
+48397,MI,Macomb,Warren,5,31
+48208,MI,Wayne,Detroit,5,31
+48314,MI,Macomb,Sterling Heights,5,31
+48234,MI,Wayne,Detroit,5,31
+48101,MI,Wayne,Allen Park,5,32
+48311,MI,Macomb,Sterling Heights,5,32
+48105,MI,Washtenaw,Ann Arbor,5,32
+48362,MI,Oakland,Lake Orion,5,32
+48211,MI,Wayne,Detroit,5,32
+48093,MI,Macomb,Warren,5,32
+48242,MI,Wayne,Detroit,5,33
+48317,MI,Macomb,Utica,5,33
+48209,MI,Wayne,Detroit,5,33
+48306,MI,Oakland,Rochester,5,33
+48217,MI,Wayne,Detroit,5,33
+48312,MI,Macomb,Sterling Heights,5,33
+48180,MI,Wayne,Taylor,5,33
+48318,MI,Macomb,Utica,5,33
+48201,MI,Wayne,Detroit,5,34
+48189,MI,Washtenaw,Whitmore Lake,5,34
+48139,MI,Livingston,Hamburg,5,34
+48216,MI,Wayne,Detroit,5,34
+48442,MI,Oakland,Holly,5,34
+48089,MI,Macomb,Warren,5,34
+48361,MI,Oakland,Lake Orion,5,34
+48174,MI,Wayne,Romulus,5,34
+48233,MI,Wayne,Detroit,5,34
+48112,MI,Wayne,Belleville,5,34
+48313,MI,Macomb,Sterling Heights,5,34
+48146,MI,Wayne,Lincoln Park,5,34
+48218,MI,Wayne,River Rouge,5,35
+48088,MI,Macomb,Warren,5,35
+48109,MI,Washtenaw,Ann Arbor,5,35
+48226,MI,Wayne,Detroit,5,35
+48222,MI,Wayne,Detroit,5,35
+48231,MI,Wayne,Detroit,5,35
+48232,MI,Wayne,Detroit,5,35
+48244,MI,Wayne,Detroit,5,35
+48255,MI,Wayne,Detroit,5,35
+48260,MI,Wayne,Detroit,5,35
+48264,MI,Wayne,Detroit,5,35
+48265,MI,Wayne,Detroit,5,35
+48266,MI,Wayne,Detroit,5,35
+48267,MI,Wayne,Detroit,5,35
+48268,MI,Wayne,Detroit,5,35
+48269,MI,Wayne,Detroit,5,35
+48272,MI,Wayne,Detroit,5,35
+48275,MI,Wayne,Detroit,5,35
+48277,MI,Wayne,Detroit,5,35
+48278,MI,Wayne,Detroit,5,35
+48279,MI,Wayne,Detroit,5,35
+48288,MI,Wayne,Detroit,5,35
+48143,MI,Livingston,Lakeland,5,35
+48316,MI,Macomb,Utica,5,36
+48243,MI,Wayne,Detroit,5,36
+48363,MI,Oakland,Oakland,5,36
+48213,MI,Wayne,Detroit,5,36
+48229,MI,Wayne,Ecorse,5,36
+48104,MI,Washtenaw,Ann Arbor,5,36
+48205,MI,Wayne,Detroit,5,36
+48106,MI,Washtenaw,Ann Arbor,5,37
+48107,MI,Washtenaw,Ann Arbor,5,37
+48113,MI,Washtenaw,Ann Arbor,5,37
+48111,MI,Wayne,Belleville,5,37
+48195,MI,Wayne,Southgate,5,37
+48207,MI,Wayne,Detroit,5,37
+48026,MI,Macomb,Fraser,5,38
+48214,MI,Wayne,Detroit,5,38
+48462,MI,Oakland,Ortonville,5,38
+48315,MI,Macomb,Utica,5,38
+48197,MI,Washtenaw,Ypsilanti,5,38
+48021,MI,Macomb,Eastpointe,5,38
+48192,MI,Wayne,Wyandotte,5,39
+48066,MI,Macomb,Roseville,5,39
+48225,MI,Wayne,Harper Woods,5,40
+48224,MI,Wayne,Detroit,5,40
+48094,MI,Macomb,Washington,5,40
+48371,MI,Oakland,Oxford,5,40
+48215,MI,Wayne,Detroit,5,40
+48038,MI,Macomb,Clinton Township,5,40
+48430,MI,Genesee,Fenton,5,40
+48035,MI,Macomb,Clinton Township,5,41
+48193,MI,Wayne,Riverview,5,41
+48370,MI,Oakland,Oxford,5,41
+48366,MI,Oakland,Lakeville,5,41
+48108,MI,Washtenaw,Ann Arbor,5,41
+48164,MI,Wayne,New Boston,5,41
+48081,MI,Macomb,Saint Clair Shores,5,42
+48036,MI,Macomb,Clinton Township,5,42
+48843,MI,Livingston,Howell,5,42
+48080,MI,Macomb,Saint Clair Shores,5,42
+48230,MI,Wayne,Grosse Pointe,5,42
+48044,MI,Macomb,Macomb,5,43
+48236,MI,Wayne,Grosse Pointe,5,43
+48095,MI,Macomb,Washington,5,43
+48082,MI,Macomb,Saint Clair Shores,5,43
+48367,MI,Oakland,Leonard,5,43
+48844,MI,Livingston,Howell,5,44
+48190,MI,Washtenaw,Whittaker,5,44
+48130,MI,Washtenaw,Dexter,5,44
+48169,MI,Livingston,Pinckney,5,44
+48042,MI,Macomb,Macomb,5,44
+48043,MI,Macomb,Mount Clemens,5,45
+48046,MI,Macomb,Mount Clemens,5,45
+48191,MI,Washtenaw,Willis,5,45
+48855,MI,Livingston,Howell,5,45
+48183,MI,Wayne,Trenton,5,45
+48103,MI,Washtenaw,Ann Arbor,5,45
+48134,MI,Wayne,Flat Rock,5,45
+48138,MI,Wayne,Grosse Ile,5,45
+48438,MI,Genesee,Goodrich,5,46
+48451,MI,Genesee,Linden,5,47
+48065,MI,Macomb,Romeo,5,48
+48096,MI,Macomb,Ray,5,49
+48045,MI,Macomb,Harrison Township,5,49
+48411,MI,Genesee,Atlas,5,49
+48455,MI,Lapeer,Metamora,5,49
+48440,MI,Lapeer,Hadley,5,50
+48439,MI,Genesee,Grand Blanc,5,50
+48173,MI,Wayne,Rockwood,5,50
+48480,MI,Genesee,Grand Blanc,5,50
+48179,MI,Monroe,South Rockwood,5,52
+48160,MI,Monroe,Milan,5,52
+48117,MI,Monroe,Carleton,5,52
+48051,MI,Macomb,New Baltimore,5,52
+48428,MI,Lapeer,Dryden,5,52
+48176,MI,Washtenaw,Saline,5,52
+48816,MI,Livingston,Cohoctah,5,53
+48137,MI,Livingston,Gregory,5,53
+48159,MI,Monroe,Maybee,5,53
+48118,MI,Washtenaw,Chelsea,5,55
+48047,MI,Macomb,New Baltimore,5,55
+48005,MI,Macomb,Armada,5,55
+48115,MI,Washtenaw,Bridgewater,5,56
+48519,MI,Genesee,Burton,5,56
+48529,MI,Genesee,Burton,5,56
+48436,MI,Genesee,Gaines,5,56
+48507,MI,Genesee,Flint,5,56
+48003,MI,Lapeer,Almont,5,56
+48836,MI,Livingston,Fowlerville,5,56
+48048,MI,Macomb,New Haven,5,56
+48418,MI,Shiawassee,Byron,5,58
+48110,MI,Monroe,Azalia,5,58
+48050,MI,Macomb,New Haven,5,59
+48166,MI,Monroe,Newport,5,59
+48473,MI,Genesee,Swartz Creek,5,60
+48509,MI,Genesee,Burton,5,60
+48423,MI,Genesee,Davison,5,60
+48503,MI,Genesee,Flint,5,61
+48501,MI,Genesee,Flint,5,61
+48531,MI,Genesee,Flint,5,61
+48550,MI,Genesee,Flint,5,61
+48551,MI,Genesee,Flint,5,61
+48552,MI,Genesee,Flint,5,61
+48553,MI,Genesee,Flint,5,61
+48554,MI,Genesee,Flint,5,61
+48555,MI,Genesee,Flint,5,61
+48556,MI,Genesee,Flint,5,61
+48557,MI,Genesee,Flint,5,61
+48502,MI,Genesee,Flint,5,61
+48446,MI,Lapeer,Lapeer,5,61
+48162,MI,Monroe,Monroe,5,62
+48004,MI,Saint Clair,Anchorville,5,62
+48062,MI,Macomb,Richmond,5,62
+48002,MI,Saint Clair,Allenton,5,62
+48158,MI,Washtenaw,Manchester,5,63
+48023,MI,Saint Clair,Fair Haven,5,64
+48506,MI,Genesee,Flint,5,65
+48532,MI,Genesee,Flint,5,65
+48892,MI,Ingham,Webberville,5,65
+48412,MI,Lapeer,Attica,5,65
+49236,MI,Lenawee,Clinton,5,65
+48131,MI,Monroe,Dundee,5,65
+48429,MI,Shiawassee,Durand,5,66
+48028,MI,Saint Clair,Harsens Island,5,66
+49285,MI,Ingham,Stockbridge,5,66
+48161,MI,Monroe,Monroe,5,66
+48505,MI,Genesee,Flint,5,66
+49229,MI,Lenawee,Britton,5,66
+48414,MI,Shiawassee,Bancroft,5,66
+48064,MI,Saint Clair,Casco,5,67
+48504,MI,Genesee,Flint,5,67
+48041,MI,Saint Clair,Memphis,5,68
+48444,MI,Lapeer,Imlay City,5,69
+49240,MI,Jackson,Grass Lake,5,69
+48001,MI,Saint Clair,Algonac,5,69
+49286,MI,Lenawee,Tecumseh,5,69
+48437,MI,Genesee,Genesee,5,69
+48014,MI,Saint Clair,Capac,5,69
+48476,MI,Shiawassee,Vernon,5,70
+48449,MI,Genesee,Lennon,5,70
+48140,MI,Monroe,Ida,5,71
+49259,MI,Jackson,Munith,5,71
+48857,MI,Shiawassee,Morrice,5,71
+48819,MI,Ingham,Dansville,5,71
+48063,MI,Saint Clair,Columbus,5,71
+48421,MI,Lapeer,Columbiaville,5,72
+48458,MI,Genesee,Mount Morris,5,73
+48145,MI,Monroe,La Salle,5,73
+48872,MI,Shiawassee,Perry,5,73
+48039,MI,Saint Clair,Marine City,5,73
+48895,MI,Ingham,Williamston,5,73
+48463,MI,Genesee,Otisville,5,74
+48433,MI,Genesee,Flushing,5,74
+49263,MI,Jackson,Norvell,5,74
+49238,MI,Lenawee,Deerfield,5,75
+49270,MI,Monroe,Petersburg,5,75
+48022,MI,Saint Clair,Emmett,5,76
+48027,MI,Saint Clair,Goodells,5,76
+49287,MI,Lenawee,Tipton,5,76
+48054,MI,Saint Clair,East China,5,77
+48157,MI,Monroe,Luna Pier,5,77
+48817,MI,Shiawassee,Corunna,5,77
+49272,MI,Jackson,Pleasant Lake,5,78
+48420,MI,Genesee,Clio,5,78
+48464,MI,Lapeer,Otter Lake,5,78
+48177,MI,Monroe,Samaria,5,79
+49261,MI,Jackson,Napoleon,5,79
+48882,MI,Shiawassee,Shaftsburg,5,80
+48461,MI,Lapeer,North Branch,5,80
+48133,MI,Monroe,Erie,5,80
+48079,MI,Saint Clair,Saint Clair,5,80
+49254,MI,Jackson,Michigan Center,5,81
+48182,MI,Monroe,Temperance,5,81
+49230,MI,Jackson,Brooklyn,5,81
+48435,MI,Tuscola,Fostoria,5,81
+48460,MI,Shiawassee,New Lothrop,5,82
+49251,MI,Ingham,Leslie,5,82
+49268,MI,Lenawee,Palmyra,5,83
+48867,MI,Shiawassee,Owosso,5,83
+49265,MI,Lenawee,Onsted,5,84
+48074,MI,Saint Clair,Smiths Creek,5,84
+48864,MI,Ingham,Okemos,5,84
+49276,MI,Lenawee,Riga,5,84
+49201,MI,Jackson,Jackson,5,84
+48840,MI,Ingham,Haslett,5,85
+48097,MI,Saint Clair,Yale,5,85
+48144,MI,Monroe,Lambertville,5,86
+49228,MI,Lenawee,Blissfield,5,86
+48006,MI,Saint Clair,Avoca,5,86
+49202,MI,Jackson,Jackson,5,86
+49267,MI,Monroe,Ottawa Lake,5,86
+49204,MI,Jackson,Jackson,5,87
+48854,MI,Ingham,Mason,5,87
+49277,MI,Jackson,Rives Junction,5,87
+49221,MI,Lenawee,Adrian,5,87
+48746,MI,Tuscola,Millington,5,87
+48805,MI,Ingham,Okemos,5,87
+48416,MI,Sanilac,Brown City,5,87
+49203,MI,Jackson,Jackson,5,87
+48040,MI,Saint Clair,Marysville,5,88
+48760,MI,Lapeer,Silverwood,5,89
+48823,MI,Ingham,East Lansing,5,89
+49234,MI,Jackson,Clarklake,5,90
+48049,MI,Saint Clair,North Street,5,90
+48848,MI,Shiawassee,Laingsburg,5,90
+48457,MI,Genesee,Montrose,5,90
+48824,MI,Ingham,East Lansing,5,91
+48825,MI,Ingham,East Lansing,5,91
+48454,MI,Sanilac,Melvin,5,91
+48826,MI,Ingham,East Lansing,5,92
+48415,MI,Saginaw,Birch Run,5,92
+48808,MI,Clinton,Bath,5,92
+49253,MI,Lenawee,Manitou Beach,5,92
+49233,MI,Lenawee,Cement City,5,93
+48060,MI,Saint Clair,Port Huron,5,94
+48910,MI,Ingham,Lansing,5,94
+48842,MI,Ingham,Holt,5,94
+48744,MI,Tuscola,Mayville,5,94
+48866,MI,Clinton,Ovid,5,94
+48841,MI,Shiawassee,Henderson,5,95
+49264,MI,Ingham,Onondaga,5,95
+49248,MI,Lenawee,Jasper,5,95
+48417,MI,Saginaw,Burt,5,95
+48912,MI,Ingham,Lansing,5,95
+49220,MI,Lenawee,Addison,5,96
+48787,MI,Saginaw,Frankenmuth,5,96
+48061,MI,Saint Clair,Port Huron,5,96
+48727,MI,Lapeer,Clifford,5,96
+48911,MI,Ingham,Lansing,5,96
+49281,MI,Hillsdale,Somerset,5,96
+49282,MI,Hillsdale,Somerset Center,5,96
+48032,MI,Saint Clair,Jeddo,5,97
+48768,MI,Tuscola,Vassar,5,97
+48616,MI,Saginaw,Chesaning,5,97
+48908,MI,Eaton,Lansing,5,97
+48933,MI,Ingham,Lansing,5,97
+48901,MI,Ingham,Lansing,5,97
+48909,MI,Ingham,Lansing,5,97
+48913,MI,Ingham,Lansing,5,97
+48916,MI,Ingham,Lansing,5,97
+48918,MI,Ingham,Lansing,5,97
+48919,MI,Ingham,Lansing,5,97
+48922,MI,Ingham,Lansing,5,97
+48929,MI,Ingham,Lansing,5,97
+48930,MI,Ingham,Lansing,5,97
+48937,MI,Ingham,Lansing,5,97
+48951,MI,Ingham,Lansing,5,97
+48956,MI,Ingham,Lansing,5,97
+48980,MI,Ingham,Lansing,5,97
+48924,MI,Ingham,Lansing,5,98
+49235,MI,Lenawee,Clayton,5,98
+48734,MI,Saginaw,Frankenmuth,5,98
+48059,MI,Saint Clair,Fort Gratiot,5,98
+48466,MI,Sanilac,Peck,5,98
+48915,MI,Ingham,Lansing,5,98
+48649,MI,Saginaw,Oakley,5,99
+49279,MI,Lenawee,Sand Creek,5,100
+48722,MI,Saginaw,Bridgeport,5,100
+49289,MI,Lenawee,Weston,5,100
+48453,MI,Sanilac,Marlette,5,100
+49249,MI,Hillsdale,Jerome,5,100
+49269,MI,Jackson,Parma,5,100
+48906,MI,Clinton,Lansing,5,100
+49246,MI,Jackson,Horton,5,101
+48741,MI,Tuscola,Kingston,5,101
+49283,MI,Jackson,Spring Arbor,5,101
+48831,MI,Clinton,Elsie,5,102
+48758,MI,Tuscola,Richville,5,103
+48821,MI,Eaton,Dimondale,5,103
+48917,MI,Eaton,Lansing,5,103
+48827,MI,Eaton,Eaton Rapids,5,103
+49257,MI,Hillsdale,Moscow,5,104
+48422,MI,Sanilac,Croswell,5,104
+48820,MI,Clinton,Dewitt,5,104
+49247,MI,Lenawee,Hudson,5,105
+49284,MI,Jackson,Springport,5,105
+49262,MI,Hillsdale,North Adams,5,107
+49256,MI,Lenawee,Morenci,5,107
+48655,MI,Saginaw,Saint Charles,5,108
+49237,MI,Jackson,Concord,5,108
+49241,MI,Jackson,Hanover,5,108
+48601,MI,Saginaw,Saginaw,5,109
+48450,MI,Sanilac,Lexington,5,110
+48807,MI,Gratiot,Bannister,5,110
+48723,MI,Tuscola,Caro,5,110
+48876,MI,Eaton,Potterville,5,110
+48614,MI,Saginaw,Brant,5,111
+48879,MI,Clinton,Saint Johns,5,111
+48605,MI,Saginaw,Saginaw,5,111
+48606,MI,Saginaw,Saginaw,5,111
+48608,MI,Saginaw,Saginaw,5,111
+48663,MI,Saginaw,Saginaw,5,111
+48401,MI,Sanilac,Applegate,5,111
+48602,MI,Saginaw,Saginaw,5,111
+48757,MI,Tuscola,Reese,5,111
+48729,MI,Tuscola,Deford,5,112
+48607,MI,Saginaw,Saginaw,5,112
+48471,MI,Sanilac,Sandusky,5,112
+48833,MI,Clinton,Eureka,5,112
+49250,MI,Hillsdale,Jonesville,5,112

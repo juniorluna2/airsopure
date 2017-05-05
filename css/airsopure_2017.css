@@ -6,32 +6,12 @@
 Blue: #1e3ecc
 Lime: #a1cf20
 White: #ffffff
+Possible Blue: #0086AE;
 */
 
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-}
-
-/* Horizontal Scroller
--------------------------------------------------- */
-.strip_area {
-  background: #0055A5 url(../images_new/strip.png);
-  height:22px;
-}
-.brand_wrapper {
-  white-space: nowrap;
-}
-.padding_put {padding: 0 35px;}
-
-.strip {
-  background: lightgrey;
-}
-.padding_put {padding: 0 35px;}
-
-.horizontal_img {
-  width: 75px;
-  height: 75px;
 }
 
 /* Services
@@ -41,36 +21,40 @@ body {
     margin-top: 100px;
 }
 .banner {
-    margin-top: -60px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-width: 7px;
-    background-color: #1e3ecc;
+  margin-top: -60px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-width: 7px;
+  background-color: #328dc9;
 }
-.banner_text {
-  font-family:Impact;
-  font-size: 42px;
+.banner-text {
+  font-family: 'Antonio';
+  font-size: 32px;
   text-transform: uppercase;
-  color: grey;
+  color: black;
   /*text-shadow: 2px 5px 2px #000;*/
-  padding: 21px 0px;
+  padding: 32px 0px;
   display: block;
+  text-align: center;
 }
-.banner_phone_number {
-  font-family:Impact;
-  color: grey !important;
-  font-size: 42px;
+.banner-phone-num {
+  font-family: 'Antonio';
+  color: black !important;
+  font-size: 32px;
   text-transform: uppercase;
-  padding: 21px 32px;
+  padding: 0px 0px;
   display: block;
-  text-decoration:none !important;  
-}
-.banner_text > img {
-  position: absolute;
-  left: 12px;
-  top: 32px;
+  text-decoration:none !important;
+  text-align: center;
 }
 
+/* Thumbtack
+-------------------------------------------------- */
+@media (max-width: 768px) {
+      .col-xs-12.tt-alig , .col-xs-12.tt-algin {
+              justify-content: : center;
+       } 
+    }
 /* Contact Form
 -------------------------------------------------- */
 .form_top {
@@ -98,8 +82,8 @@ body {
   font-weight: bold;
 }
 .cf_img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 }
 .cf_img-divider {
   margin: 10px 0; /* Space out the Bootstrap <hr> more */
@@ -124,16 +108,389 @@ body {
   margin-top: 50px;
 }
 .faq_custom_top {
-  background-color: #1e3ecc;
-  color: lightgrey;
+  background-color: #328dc9;
+  color: black;
 }
 .faq_custom_bottom {
   border: solid;
 }
 
-/* Store
+/* Footer
 -------------------------------------------------- */
-.store_pad {
-  margin-top: 100px;
+.padding_footer {
+  padding-bottom: 100px;
 }
 
+/* Soical Icons
+-------------------------------------------------- */
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  /*display: inline;*/
+  margin-left: -75px;
+  margin-top: 10px;
+}
+ul.social-network li {
+  display: inline;
+}
+/* footer social icons */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+  background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoMail:hover {
+  background-color:#f799f7;
+}
+.social-network a.icoInsta:hover {
+  background-color:#fb3958;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
+.social-network a.icoMail:hover i, .social-network a.icoInsta:Hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align:center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: -70px;
+}
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  margin-top: -5px;
+}
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+a.social-bg-facebook {
+ background-color: #3B5998;
+}
+a.social-bg-twitter {
+ background-color: #33ccff;
+}
+a.social-bg-instagram {
+ background-color: #fb3958;
+}
+a.social-bg-google-plus {
+ background-color: #BD3518;
+}
+a.social-bg-linkedin {
+ background-color: #007bb7;
+}
+a.social-bg-mail {
+ background-color: #f799f7;
+}
+
+/* Gallery
+-------------------------------------------------- */
+.gal-hd-text {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.gal-process-text {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+}
+.gal-img {
+  width: 300px;
+  height: 250px;
+  padding-bottom: 25px;
+}
+.gal-ba-text {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 25px;  
+}
+
+/* License
+-------------------------------------------------- */
+.lic-hd-text {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.lic-sub-text {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Store
+-------------------------------------------------- */
+/*=============================================================
+  Authour URL: www.designbootstrap.com
+  http://www.designbootstrap.com/
+  License: MIT     
+========================================================  */
+/*============================================================
+BACKGROUND COLORS
+============================================================*/
+.db-bk-color-one {
+  background-color: #f55039;
+}
+
+.db-bk-color-two {
+  background-color: #46A6F7;
+  padding-bottom: 40px;
+}
+
+.db-bk-color-three {
+  background-color: #47887E;
+}
+
+.db-bk-color-six {
+  background-color: #F59B24;
+}
+/* PRICING STYLES */
+.db-padding-btm {
+  padding-bottom: 50px;
+}
+.db-button-color-square {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.50);
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.db-button-color-square:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.50);
+  border: none;
+}
+.db-pricing-eleven {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  color: #fff;
+  line-height: 30px;
+}
+.db-pricing-eleven ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding-left: 0px;
+}
+.db-pricing-eleven ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.db-pricing-eleven ul li i {
+  margin-right: 5px;
+}
+.db-pricing-eleven .price {
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: #46A6F7;
+  padding: 40px 20px 20px 20px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.db-pricing-eleven .price small {
+  color: #B8B8B8;
+  display: block;
+  font-size: 12px;
+  margin-top: 22px;
+}
+.db-pricing-eleven .type {
+  /*background-color: #52E89E;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.db-pricing-eleven .pricing-footer {
+  padding: 20px;
+}
+.db-attached > .col-lg-4,
+.db-attached > .col-lg-3,
+.db-attached > .col-md-4,
+.db-attached > .col-md-3,
+.db-attached > .col-sm-4,
+.db-attached > .col-sm-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.db-pricing-eleven.popular {
+    margin-top: 10px;
+}
+.db-pricing-eleven.popular .price {
+  padding-top: 80px;
+}
+
+/* PayPal
+-------------------------------------------------- */
+.paypal-button { 
+  white-space: nowrap;
+}
+.paypal-button button { 
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 13px;
+  font-family: "Arial", bold, italic;
+  font-weight: bold;
+  font-style: italic;
+  border: 1px solid #ffa823;
+  color: #0E3168;
+  background: #ffa823;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  cursor: pointer;
+  z-index: 0;
+}
+.paypal-button button:before { 
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  top: 0;
+  left: 0;
+  background: #ffa823;
+  background: -webkit-linear-gradient(top, #FFAA00 0%,#FFAA00 80%,#FFF8FC 100%);
+  background: -moz-linear-gradient(top, #FFAA00 0%,#FFAA00 80%,#FFF8FC 100%);
+  background: -ms-linear-gradient(top, #FFAA00 0%,#FFAA00 80%,#FFF8FC 100%);
+  background: linear-gradient(top, #FFAA00 0%,#FFAA00 80%,#FFF8FC 100%); z-index: -2;
+}
+.paypal-button button:after { 
+  content: " ";
+  position: absolute;
+  width: 98%;
+  height: 60%;
+  border-radius: 40px 40px 38px 38px; top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(top, #fefefe 0%, #fed994 100%);
+  background: -moz-linear-gradient(top, #fefefe 0%, #fed994 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #fed994 100%);
+  background: linear-gradient(top, #fefefe 0%, #fed994 100%);
+  z-index: -1;
+  -webkit-transform: translateX(1%);
+  -moz-transform: translateX(1%);
+  -ms-transform: translateX(1%);
+  transform: translateX(1%);
+}
+.paypal-button button.small { 
+  padding: 3px 15px; font-size: 12px;
+}
+.paypal-button button.large { 
+  padding: 4px 19px; 
+  font-size: 14px;
+}
+
+/* Simply Scroll
+-------------------------------------------------- */
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+  position: relative;
+}
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+  position: relative;
+  overflow: hidden;
+}
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+} 
+.simply-scroll-list li {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}  
+.simply-scroll-list li img {
+  border: solid;
+  display: block;
+}
+/* Custom class modifications - adds to / overrides above
+.simply-scroll is default base class */
+/* Container DIV */
+.simply-scroll { 
+  width: 75px;
+  height: 75px;
+  /*padding-left: 490px;*/
+  /*margin-left: 490px;*/
+  margin: 0 auto;
+}
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+  width: 300px;
+  height: 100px;
+}
+/* Explicitly set height/width of each list item (distance between imgs)*/ 
+.simply-scroll .simply-scroll-list li {
+  float: left; /* Horizontal scroll only */
+  width: 100px;
+  height: 100px;
+}
+.horizontal_img {
+  width: 75px;
+  height: 75px;
+}
+
+/* Map
+-------------------------------------------------- */
+#map-canvas {
+  width: 300px;
+  height: 300px;
+  background: white;
+}

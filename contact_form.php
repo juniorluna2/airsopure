@@ -78,7 +78,14 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <!-- place your own success html below -->
- 
+
+<script type="text/javascript">
+    // Set timeout to 5 seconds, measured in milliseconds
+    setTimeout(function () {
+        window.location = "contactus.html"; // relative URL
+    }, 5000);
+</script> 
+
 Thank you for contacting us. We will be in touch with you very soon.
  
 <?php
