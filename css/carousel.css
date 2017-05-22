@@ -20,8 +20,8 @@ body {
 .navbar-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
+  right: -15px;
+  left: -15px;
   z-index: 20;
 }
 /* Flip around the padding for proper display in narrow viewports */
@@ -36,7 +36,8 @@ body {
   height: 165px;
 }
 .navbar-wrapper .navbar .container {
-  width: auto;
+  width: 0 0;
+  /*width: auto;*/
 }
 .navbar-top {
   width: 1280px;
@@ -59,7 +60,7 @@ body {
   font-family: 'open-sans';
 }
 .nav-subtext a {
-  color: black;
+  color: black;  
 }
 .nav-img-hd {
   width: 300px;
@@ -96,8 +97,8 @@ body {
 .carousel-inner > .item > img {
   /*position: absolute;
   top: 0px;
-  left: 300px;
-  min-width: 50%;*/
+  left: 300px;*/
+  min-width: 50%;
   height: 500px;
   margin: 0 auto;
 }

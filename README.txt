@@ -157,6 +157,12 @@ Logs:
 
 20170504 - added Thumbtack widget to phone banner
 
+20170509 - created 266 cities using the template John's qpproved
+		   - use the following command to import multiple files: ftp -i airsopure.com then mput *
+
+20170522 - updated MX entry for contact page to work properly
+		   - updated navbar to extend to full screen by switch class="container-fluid" from class="container"
+
 ToDo:
 - remove the href to the parent services options
 - fixed the view in about.html
