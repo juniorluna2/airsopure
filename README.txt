@@ -163,7 +163,29 @@ Logs:
 20170522 - updated MX entry for contact page to work properly
 		   - updated navbar to extend to full screen by switch class="container-fluid" from class="container"
 
+20170523 - After talking to GoDaddy, the following have to be reconfigure in the MX Entry settings
+		   - Email Routing -> Remote Mail Exchanger
+		   - MX Records -> added yahoo.com and gmail.com
+		   - Will take a few hours to update
+
+20170524 - added gen_validatorv31.js script to ftp account
+		   - was able to successful get the contact form to work and implemented AirSoPure gmail account
+
+20170609 - adding navbar and background color to contact page
+	 	   - added a few more requested fields to send email
+
+20170612 - added phone number to request required field in contact page
+
+20170620 - added photos to contact page and map
+
+20171017 - added service.com badge to home page
+
+20171024 - added youtube https://www.youtube.com/watch?v=Y1bna9YkHFI to home page per John's request
+
+20171104 - changed paypal prices to 365, 395, and 425 per John's text request
+
 ToDo:
+- customize the contact.html page
 - remove the href to the parent services options
 - fixed the view in about.html
   - fixed to be embed-responsive ... like video in faq.html

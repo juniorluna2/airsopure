@@ -664,24 +664,24 @@ function validateInput(strValidateStr,objValue,strError)
     } 
     switch(command) 
     { 
-        case "req": 
-        case "required": 
-         { 
-		   ret = TestRequiredInput(objValue,strError)
-           break;             
-         }//case required 
+        case "req":
+        case "required":
+        {
+		      ret = TestRequiredInput(objValue,strError)
+          break;             
+        }//case required 
         case "maxlength": 
         case "maxlen": 
-          { 
-			 ret = TestMaxLen(objValue,cmdvalue,strError)
-             break; 
-          }//case maxlen 
+        { 
+		      ret = TestMaxLen(objValue,cmdvalue,strError)
+          break; 
+        }//case maxlen 
         case "minlength": 
         case "minlen": 
-           { 
-			 ret = TestMinLen(objValue,cmdvalue,strError)
-             break; 
-            }//case minlen 
+        { 
+		      ret = TestMinLen(objValue,cmdvalue,strError)
+          break; 
+        }//case minlen 
         case "alnum": 
         case "alphanumeric": 
            { 
